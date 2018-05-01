@@ -23,7 +23,7 @@ defmodule Hangman.Game do
   end
 
   def accept_move(game, guess, _already_guessed = true) do
-    Map.put(game, :game_state, :not_used)
+    Map.put(game, :game_state, :already_used)
   end
 
   def accept_move(game, guess, _already_guessed = false) do
